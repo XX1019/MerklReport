@@ -1,0 +1,14 @@
+{
+  "name": "MerklReport",
+  "homepage": "https://github.com/stepenwang/MerklReport",
+  "authors": [
+    "王志龙 <991405736qq@gmail.com>"
+  ],
+  "description": "reporte system of Merkl",
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "license": "MIT"
+}
