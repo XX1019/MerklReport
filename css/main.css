@@ -1,0 +1,10 @@
+html, body {
+    min-height: height: 100vh !important;
+    height: 100vh;
+}
+.main-side-card {
+	position: fixed;
+	width: 240px;
+	height: 100vh;
+	overflow: hidden;
+}
