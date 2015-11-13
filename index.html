@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+		
+		<!--debug-->
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<!--when release, change to CDN-->
+		<title>Merkel Report System</title>
+	</head>
+
+	<body>
+		<!--Nav show only on small screens-->
+		<nav class="hide-on-med-and-up">
+			<div class="nav-wrapper light-blue">
+				<a href="#" class="brand-logo">Merkel</a>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</nav>
+		<!--side bar can toggle on small screens but do not show on medium and up-->
+		<div id="slide-out" class="side-nav">
+			This is slide menu
+		</div>
+		<!--side bar shows only on medium and large screen-->
+		<div class="hide-on-small-and-down main-side-card z-depth-1-half grey lighten-5">
+			Here is the side bar shows only on medium and large screen
+		</div>
+
+		<!--debug-->
+
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+		<script type="application/javascript">
+			$(document).ready(function(){
+				$(".button-collapse").sideNav();
+			});
+		</script>
+		<!--when release, change to CDN-->
+	</body>
+
+</html>

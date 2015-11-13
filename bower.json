@@ -1,10 +1,11 @@
 {
   "name": "MerklReport",
-  "homepage": "https://github.com/stepenwang/MerklReport",
+  "homepage": "https://github.com/XX1019/MerklReport",
   "authors": [
-    "王志龙 <991405736qq@gmail.com>"
+    "夏佳",
+    "王志龙 <991405736qq@gmail.com>",
   ],
-  "description": "reporte system of Merkl",
+  "description": "reporte system of Merkel",
   "main": "index.html",
   "moduleType": [
     "es6",
