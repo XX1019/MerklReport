@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
-		
+
 		<!--debug-->
 		<link rel="stylesheet" href="css/animate.css" />
 		<link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css" />
@@ -27,16 +27,36 @@
 		</div>
 		<!--side bar shows only on medium and large screen-->
 		<div class="hide-on-small-and-down main-side-card z-depth-1-half grey lighten-5">
-			Here is the side bar shows only on medium and large screen
+			<div class="main-user-profile">
+				<i class="medium mdi-action-account-circle white-text "></i>
+				<div class="waves-effect waves-light  dropdown-button btn-flat main-user-profile-button" data-activates='dropdown1'>zhilong.wang@shanbay.com</div>
+			</div>
+			<!--others-->
 		</div>
 
+		<!-- Dropdown Structure -->
+		<ul id='dropdown1' class='dropdown-content'>
+			<li><a href="#!">view profile</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">edit</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">logout</a></li>
+		</ul>
 		<!--debug-->
 
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
 		<script type="application/javascript">
-			$(document).ready(function(){
+			$(document).ready(function() {
 				$(".button-collapse").sideNav();
+				$('.dropdown-button').dropdown({
+					inDuration: 300,
+					outDuration: 225,
+					constrain_width: true, // Does not change width of dropdown to that of the activator
+					hover: false, // Activate on hover
+					gutter: 0, // Spacing from edge
+					belowOrigin: false // Displays dropdown below the button
+				});
 			});
 		</script>
 		<!--when release, change to CDN-->
